@@ -9,15 +9,11 @@ class StoresVC: UIViewController {
         super.init(nibName: nil, bundle:nil)
     }
     
+    //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let nib = UINib(nibName: "StoreTVCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "StoreTVCell")
-    }
-    
-    private let stores: [Store] = [
+    //MARK: - Properties
+    private let stores: [Store] = [//mock data
         Store(name: "Walmart", address: "123 Main St"),
         Store(name: "CVS", address: "25 Cherry Road"),
         Store(name: "Fuddruckers", address: "2504 Wendover"),
@@ -25,6 +21,7 @@ class StoresVC: UIViewController {
     ]
 }
 
+//MARK: - UITableViewDataSource
 extension StoresVC: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -41,6 +38,7 @@ extension StoresVC: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate
 extension StoresVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

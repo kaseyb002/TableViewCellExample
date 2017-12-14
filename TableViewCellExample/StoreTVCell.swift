@@ -1,8 +1,24 @@
 import UIKit
 
-class StoreTVCell: UITableViewCell, TableViewCell {
+class StoreTVCell: UITableViewCell{
     
-    //MARK: - TableViewCell protocol implementation
+    //MARK: - Outlets
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+}
+
+//MARK: - UI Updates
+extension StoreTVCell {
+    
+    private func updateCell(withStore store: Store) {
+        nameLabel.text = store.name
+        addressLabel.text = store.address
+    }
+}
+
+//MARK: - TableViewCell protocol implementation
+extension StoreTVCell: TableViewCell {
+    
     static var nibName: String { return String(describing: self) }
     static var reuseId: String { return String(describing: self) }
     static let rowHeight: CGFloat = 100
@@ -15,18 +31,5 @@ class StoreTVCell: UITableViewCell, TableViewCell {
                         indexPath: indexPath)
         cell.updateCell(withStore: store)
         return cell
-    }
-
-    //MARK: - Outlets
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
-}
-
-//MARK: - UI Updates
-extension StoreTVCell {
-    
-    private func updateCell(withStore store: Store) {
-        nameLabel.text = store.name
-        addressLabel.text = store.address
     }
 }
