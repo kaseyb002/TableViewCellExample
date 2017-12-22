@@ -1,6 +1,6 @@
 import UIKit
 
-class StoreTVCell: UITableViewCell{
+class StoreTVCell: UITableViewCell {
     
     //MARK: - Outlets
     @IBOutlet weak var nameLabel: UILabel!
@@ -16,11 +16,9 @@ extension StoreTVCell {
     }
 }
 
-//MARK: - TableViewCell protocol implementation
-extension StoreTVCell: TableViewCell {
+//MARK: - Inits
+extension StoreTVCell {
     
-    static var nibName: String { return String(describing: self) }
-    static var reuseId: String { return String(describing: self) }
     static let rowHeight: CGFloat = 100
     
     static func makeCell(withStore store: Store,

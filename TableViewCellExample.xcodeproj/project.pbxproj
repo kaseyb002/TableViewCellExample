@@ -17,7 +17,7 @@
 		036285551FD5E6C8001CB3FA /* StoreTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036285531FD5E6C8001CB3FA /* StoreTVCell.swift */; };
 		036285561FD5E6C8001CB3FA /* StoreTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036285541FD5E6C8001CB3FA /* StoreTVCell.xib */; };
 		0362855C1FD5E778001CB3FA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362855B1FD5E778001CB3FA /* Store.swift */; };
-		0362855E1FD5E7BE001CB3FA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362855D1FD5E7BE001CB3FA /* TableViewCell.swift */; };
+		0362855E1FD5E7BE001CB3FA /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362855D1FD5E7BE001CB3FA /* UITableViewCell+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		036285531FD5E6C8001CB3FA /* StoreTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTVCell.swift; sourceTree = "<group>"; };
 		036285541FD5E6C8001CB3FA /* StoreTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreTVCell.xib; sourceTree = "<group>"; };
 		0362855B1FD5E778001CB3FA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		0362855D1FD5E7BE001CB3FA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0362855D1FD5E7BE001CB3FA /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				036285531FD5E6C8001CB3FA /* StoreTVCell.swift */,
 				036285541FD5E6C8001CB3FA /* StoreTVCell.xib */,
 				0362855B1FD5E778001CB3FA /* Store.swift */,
-				0362855D1FD5E7BE001CB3FA /* TableViewCell.swift */,
+				0362855D1FD5E7BE001CB3FA /* UITableViewCell+Extensions.swift */,
 				036285261FD5E4F2001CB3FA /* Assets.xcassets */,
 				036285281FD5E4F2001CB3FA /* LaunchScreen.storyboard */,
 				0362852B1FD5E4F2001CB3FA /* Info.plist */,
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0362855E1FD5E7BE001CB3FA /* TableViewCell.swift in Sources */,
+				0362855E1FD5E7BE001CB3FA /* UITableViewCell+Extensions.swift in Sources */,
 				036285201FD5E4F2001CB3FA /* AppDelegate.swift in Sources */,
 				0362854F1FD5E532001CB3FA /* StoresVC.swift in Sources */,
 				036285551FD5E6C8001CB3FA /* StoreTVCell.swift in Sources */,
